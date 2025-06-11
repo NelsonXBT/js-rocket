@@ -8,11 +8,28 @@ var changeState = function (state) {
     countDownNumber = 10;
     document.getElementById('countDown').innerHTML = countDownNumber;
 
+
+    // Countdown
     if (state == 2) {
         timer = setInterval (function () {  
             countDownNumber = countDownNumber -1;
             document.getElementById('countDown').innerHTML = countDownNumber;
             
+
+            if (countDownNumber == 3 && countDownNumber <= 7) {
+                // Be nervous
+                document.getElementById('nervous').className = 'nervous show';
+            } else {
+                document.getElementById('nervous').className = 'nervous';
+            }
+
+            if (countDownNumber == 1 && countDownNumber <= 5) {
+                // Can't wait
+                document.getElementById('cant-wait').className = 'cant-wait show';
+            } else {
+                document.getElementById('cant-wait').className = 'cant-wait';
+            }
+
             if (countDownNumber <= 0) {
                 changeState(3);
             };
