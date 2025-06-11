@@ -2,18 +2,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Rocket</title>
-    <script type="text/javascript" src="./js/script.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/script1.js"></script>
+    <title>Rocket Launch</title>
 </head>
-<body>
-    <h1>Hello, Js Rocket!</h1>
-    <a href="#" onclick="doCoolStuff();">CLICK ME</a>
-
-    <div class="cool" id="cool">
-        <p>Hello, I'm Cool!</p>
+<body class="body-state1">
+    <header><h1>JS Rocket Launch</h1></header>
+    <div class="left" id="left-text">
+        <div class="interface state1">
+            
+            <a href="#" class="button" onclick="changeState (2);">Launch!</a>
+        </div>
+        <div class="interface state2">
+            <h1 id="countDown">10</h1>
+            <a href="#"onclick="changeState (1);" class="abort">Abort!</a>
+        </div>
+        <div class="interface state3">
+            <h1>Lift Off!</h1>
+        </div>
+        <div class="interface state4">
+            <h1>Well Done!</h1>
+            <a href="#" class="button" onclick="changeState (1);">Do It Again!</a>
+        </div>
+        <div class="interface state5">
+            <h1>Oh No!!!</h1>
+            <a href="#" class="button" onclick="changeState (1);">Try Again!</a>
+        </div>
 
     </div>
+    <div class="right">
+        <div class="ground"></div>
+        <div class="rocket"></div>
+        <div class="nervous" id="nervous"></div>
+        <div class="cant-wait" id="cant-wait"></div>
+    </div>
+    
 </body>
 </html>
-
