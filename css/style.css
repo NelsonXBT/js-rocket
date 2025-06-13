@@ -11,10 +11,11 @@ body {
     text-align: center;
 }
 
-header{
+header h1{
     position: fixed;
-    justify-content: center;
+    text-align: center;
     padding-top: 5rem;
+    margin-right: ;
     color: white;
 }
 
