@@ -6,7 +6,7 @@ body {
 
 
 .left {
-    background-color: aquamarine;
+    background-color: rgb(13, 159, 179);
     position: fixed;
     width: 50%;
     height: 100%;
@@ -16,6 +16,7 @@ body {
 
 .left h1 {
     padding-top: 40%;
+    color: wheat;
 }
 
 .interface {
@@ -30,6 +31,7 @@ a.button {
     padding: 20px 40px;
     text-transform: uppercase ;
     text-decoration: none;
+    border: 0.3rem solid rgb(19, 6, 138);
     border-radius: 10px;
     transition: color 300ms;
 }
